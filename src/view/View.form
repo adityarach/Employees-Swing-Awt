@@ -122,8 +122,8 @@
                           </Group>
                           <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtEmployeeID" min="-2" pref="79" max="-2" attributes="0"/>
-                              <Component id="txtFirstName" min="-2" pref="219" max="-2" attributes="0"/>
+                              <Component id="txtFirstName" min="-2" pref="267" max="-2" attributes="0"/>
+                              <Component id="txtEmployeeID" min="-2" pref="150" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -140,24 +140,25 @@
                           </Group>
                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="txtHireDate" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtDepartmentID" min="-2" pref="79" max="-2" attributes="0"/>
-                                  <Component id="txtManagerID" min="-2" pref="79" max="-2" attributes="0"/>
-                                  <Component id="txtCommissionPCT" min="-2" pref="79" max="-2" attributes="0"/>
-                                  <Component id="txtJobID" min="-2" pref="79" max="-2" attributes="0"/>
-                                  <Component id="txtLastName" alignment="0" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="txtEmail" alignment="0" max="32767" attributes="0"/>
                                   <Component id="txtPhoneNumber" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtSalary" alignment="0" min="-2" pref="219" max="-2" attributes="0"/>
+                                  <Component id="txtLastName" alignment="0" pref="267" max="32767" attributes="0"/>
+                                  <Component id="txtSalary" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="txtDepartmentID" alignment="0" pref="150" max="32767" attributes="0"/>
+                                      <Component id="txtManagerID" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="txtCommissionPCT" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="txtJobID" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtHireDate" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="49" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="btnDelete" pref="157" max="32767" attributes="0"/>
                       <Component id="btnSave" max="32767" attributes="0"/>
@@ -257,6 +258,7 @@
         </Component>
         <Component class="org.freixas.jcalendar.JCalendarCombo" name="txtHireDate">
           <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="txtHireDateMouseClicked"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtHireDateActionPerformed"/>
             <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="txtHireDatePropertyChange"/>
           </Events>
