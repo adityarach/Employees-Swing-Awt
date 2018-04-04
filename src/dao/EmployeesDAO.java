@@ -7,6 +7,8 @@ package dao;
 
 import entities.Employees;
 import java.util.List;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -61,5 +63,4 @@ public class EmployeesDAO implements InterfaceDAO {
     public Object getById(String id) {
         return fdao.getById("from Employees where employeeId='" + id + "'");
     }
-
 }

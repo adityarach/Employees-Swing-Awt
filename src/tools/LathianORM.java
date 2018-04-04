@@ -43,15 +43,15 @@ public class LathianORM {
 //        }
         Employees emp = (Employees) 
                 new EmployeesDAO()
-                        .getById("100");
+                        .getById("207");
 //        System.out.println(emp.getFirstName()
 //        +" "+emp.getLastName()+" ");
 //        +emp.getDepartmentId().getDepartmentName());
 
-        emp = new Employees(209, "Santosaaaaa", "joekelir", new Date());
-        emp.setJobId(new Jobs("AD_PRES"));
-        System.out.println(new EmployeesDAO().insert(emp));
-//        System.out.println(new EmployeesDAO().delete(209));
+//        emp = new Employees(208, "Santosaaaaa", "joekelir", new Date());
+//        emp.setJobId(new Jobs("AD_PRES"));
+//        System.out.println(new EmployeesDAO().insert(emp));
+        System.out.println(new EmployeesDAO().delete(emp));
 //        emp.setFirstName("Ignatius");
 //        System.out.println(new EmployeesDAO()
 //                .update(emp));
@@ -258,16 +258,16 @@ public class LathianORM {
          /**
           * insert untuk Regions
           */
-        Regions regions = new Regions();
-        regions.setRegionId(new BigDecimal(5));
-        regions.setRegionName("Asia Pasifik");
-        System.out.println(new CountriesDAO().insert(regions));
+//        Regions regions = new Regions();
+//        regions.setRegionId(new BigDecimal(5));
+//        regions.setRegionName("Asia Pasifik");
+//        System.out.println(new CountriesDAO().insert(regions));
 
            /**
             * delete untuk Regions
             */
 //        System.out.println(new RegionsDAO().delete(BigDecimal.ZERO));
-          System.out.println(new RegionsDAO().delete(new BigDecimal(5)));
+//          System.out.println(new RegionsDAO().delete(new BigDecimal(5)));
           
 /**
            * delete untuk Locations
