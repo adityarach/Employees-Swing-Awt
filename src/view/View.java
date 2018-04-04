@@ -5,7 +5,6 @@
  */
 package view;
 
-import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
 import controller.EmployeeController;
 import java.text.Format;
 import java.text.ParseException;
@@ -105,6 +104,11 @@ public class View extends javax.swing.JFrame {
 
             }
         ));
+        TblEmployees.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TblEmployeesMouseClicked(evt);
+            }
+        });
         jScrollPane2.setViewportView(TblEmployees);
 
         lblJobId.setText("Job ID");
@@ -252,10 +256,9 @@ public class View extends javax.swing.JFrame {
                                 .addComponent(txtPhoneNumber)
                                 .addComponent(txtLastName, javax.swing.GroupLayout.DEFAULT_SIZE, 267, Short.MAX_VALUE)
                                 .addComponent(txtSalary, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(txtDepartmentID, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                                    .addComponent(txtManagerID, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtCommissionPCT, javax.swing.GroupLayout.Alignment.LEADING)))
+                                .addComponent(txtDepartmentID, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
+                                .addComponent(txtManagerID)
+                                .addComponent(txtCommissionPCT))
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(txtJobID, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(txtHireDate, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
@@ -490,6 +493,10 @@ public class View extends javax.swing.JFrame {
     private void txtHireDateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtHireDateMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_txtHireDateMouseClicked
+
+    private void TblEmployeesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TblEmployeesMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TblEmployeesMouseClicked
 
     /**
      * @param args the command line arguments

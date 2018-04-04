@@ -104,6 +104,9 @@
               <Table columnCount="0" rowCount="4"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="TblEmployeesMouseClicked"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
@@ -145,11 +148,9 @@
                                   <Component id="txtPhoneNumber" alignment="0" max="32767" attributes="0"/>
                                   <Component id="txtLastName" alignment="0" pref="267" max="32767" attributes="0"/>
                                   <Component id="txtSalary" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
-                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="txtDepartmentID" alignment="0" pref="150" max="32767" attributes="0"/>
-                                      <Component id="txtManagerID" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="txtCommissionPCT" alignment="0" max="32767" attributes="0"/>
-                                  </Group>
+                                  <Component id="txtDepartmentID" alignment="0" pref="150" max="32767" attributes="0"/>
+                                  <Component id="txtManagerID" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtCommissionPCT" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                   <Component id="txtJobID" alignment="0" max="32767" attributes="0"/>
